@@ -41,12 +41,18 @@ public class RomanNumeralTest {
 		
 		assertEquals("III", romanNumber.toString());
 	}
-	
+
+	@Test
+	public void whenGivenFourIVReturned() {
+		RomanNumeral numeral = new RomanNumeral(4);
+		assertEquals("IV", numeral.toString());
+	}
+
 	@Test
 	public void whenGivenNineIXReturned() {
 		RomanNumeral numeral = new RomanNumeral(9);
 		assertEquals("IX", numeral.toString());
 	}
-
+	
 }
 
