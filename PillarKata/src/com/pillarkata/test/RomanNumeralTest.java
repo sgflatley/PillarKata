@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.pillarkata.RomanNumeral;
+
 public class RomanNumeralTest {
 
 	@BeforeClass
@@ -27,8 +29,11 @@ public class RomanNumeralTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void whenGivenOneUpperCaseEyeReturned() {
+		RomanNumeral romanNumber = new RomanNumeral(1);
+		
+		assertEquals("I", romanNumber.toString());
 	}
 
 }
+
