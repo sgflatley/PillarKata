@@ -55,7 +55,7 @@ public class RomanNumeralTest {
 	}
 	
 	@Test
-	public void whenGivenOneThousandSixtySixMLXVIReturned() {
+	public void whenGivenOneThousandSixSixMLXVIReturned() {
 		RomanNumeral numeral = new RomanNumeral(1066);
 		assertEquals("MLXVI", numeral.toString());
 	}
