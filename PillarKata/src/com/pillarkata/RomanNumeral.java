@@ -2,11 +2,13 @@ package com.pillarkata;
 
 public class RomanNumeral {
 
+	private int value = 0;
+	
 	public RomanNumeral(int i) {
-		// TODO Auto-generated constructor stub
+		value = i;
 	}
 
 	public String toString() {
-		return "";
+		return "I";
 	}
 }
