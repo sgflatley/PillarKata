@@ -29,10 +29,17 @@ public class RomanNumeralTest {
 	}
 
 	@Test
-	public void whenGivenOneUpperCaseEyeReturned() {
+	public void whenGivenOneAnUpperCaseEyeReturned() {
 		RomanNumeral romanNumber = new RomanNumeral(1);
 		
 		assertEquals("I", romanNumber.toString());
+	}
+	
+	@Test
+	public void whenGivenThreeIIIReturned() {
+		RomanNumeral romanNumber = new RomanNumeral(3);
+		
+		assertEquals("III", romanNumber.toString());
 	}
 
 }
