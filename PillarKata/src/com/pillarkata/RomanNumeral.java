@@ -9,6 +9,11 @@ public class RomanNumeral {
 	}
 
 	public String toString() {
-		return "I";
+		StringBuilder builder = new StringBuilder();
+		for (int i = 0; i < value; i++)
+		{
+			builder.append('I');
+		}
+		return builder.toString();
 	}
 }
