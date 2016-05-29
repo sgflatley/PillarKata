@@ -59,10 +59,22 @@ public class RomanNumeralTest {
 		RomanNumeral numeral = new RomanNumeral(1066);
 		assertEquals("MLXVI", numeral.toString());
 	}
+
+	@Test
+	public void whenGivenNineteenHundredMCMReturned() {
+		RomanNumeral numeral = new RomanNumeral(1900);
+		assertEquals("MCM", numeral.toString());
+	}
+
+	@Test
+	public void whenGivenOneZeroEightyNineMLXXXIXReturned() {
+		RomanNumeral numeral = new RomanNumeral(1089);
+		assertEquals("MLXXXIX", numeral.toString());
+	}
 	
 	@Test
 	public void whenGivenNineteenEightyNineMCMLXXXIXReturned() {
-		RomanNumeral numeral = new RomanNumeral(1066);
+		RomanNumeral numeral = new RomanNumeral(1989);
 		assertEquals("MCMLXXXIX", numeral.toString());
 	}
 	
